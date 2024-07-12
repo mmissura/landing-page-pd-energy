@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-image {
+  background: url('https://images.ecycle.com.br/wp-content/uploads/2021/07/14122425/photovoltaic-2138992_1920.jpg.webp');
+  background-position: bottom;
+}
