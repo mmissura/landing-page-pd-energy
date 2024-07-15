@@ -2,6 +2,14 @@ import { BsWhatsapp } from 'react-icons/bs';
 import Logo1 from './assets/images/logo2.png';
 
 export const App = () => {
+  const handleMenuScroll = (section: string) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const element: any = document.getElementById(section);
+    element.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className='w-full'>
       <div className='w-3/4 m-auto grid grid-cols-2 p-4 justify-between items-center'>
@@ -16,16 +24,28 @@ export const App = () => {
 
         <nav className='w-full'>
           <ul className='flex justify-end gap-4 2xl:text-2xl xl:text-2xl text-lg'>
-            <li>MENU</li>
-            <li>MENU</li>
+            <li
+              className='bg-green-500 p-2 rounded text-white cursor-pointer hover:bg-green-700'
+              onClick={() => handleMenuScroll('test')}
+            >
+              TEST
+            </li>
+            <li
+              className='bg-green-500 p-2 rounded text-white cursor-pointer hover:bg-green-700'
+              onClick={() => handleMenuScroll('contact')}
+            >
+              CONTACT
+            </li>
           </ul>
         </nav>
       </div>
 
       <div className='bg-image'>
         <div className='w-full bg-black bg-opacity-30 py-14'>
-          <div className='2xl:w-3/4 xl:w-3/4 w-full h-full m-auto 
-          grid 2xl:grid-cols-2 xl:grid-cols-2 grid-cols-1 p-4 gap-6 justify-between items-center'>
+          <div
+            className='2xl:w-3/4 xl:w-3/4 w-full h-full m-auto 
+          grid 2xl:grid-cols-2 xl:grid-cols-2 grid-cols-1 p-4 gap-6 justify-between items-center'
+          >
             <div className='w-full'>
               <iframe
                 width='100%'
@@ -38,33 +58,35 @@ export const App = () => {
               ></iframe>
             </div>
             <div className='w-full'>
-              <h2 className='text-green-300 text-center 
-              2xl:text-5xl xl:text-5xl lg:text-5xl text-4xl font-semibold'>
+              <h2
+                className='text-green-300 text-center 
+              2xl:text-5xl xl:text-5xl lg:text-5xl text-4xl font-semibold'
+              >
                 Texto curto com ênfase no produto
                 {/* Juros de 7%<br></br> 10 anos para pagar<br></br> Até 2 anos de carência para investimento */}
-                </h2>
+              </h2>
               <div className='mt-4 text-white 2xl:text-2xl cl:text-2xl text-xl text-center'>
-              <p>
-                Descrição sobre o plano safra.
-              </p>
+                <p>Descrição sobre o plano safra.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className='2xl:w-1/2 xl:w-1/2 w-full h-full m-auto grid 2xl:grid-cols-0 
-      xl:grid-cols-0 grid-cols-1 p-4 gap-6 justify-center items-center'>
-              <iframe
-                width='100%'
-                height='315'
-                src='https://www.youtube.com/embed/fJ5X6Dve3RY?si=pjpGdbInnCeycWiX&amp;controls=0'
-                title='YouTube video player'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                referrerPolicy='strict-origin-when-cross-origin'
-                allowFullScreen
-              ></iframe>
-            </div>
+      <div
+        className='2xl:w-1/2 xl:w-1/2 w-full h-full m-auto grid 2xl:grid-cols-0 
+      xl:grid-cols-0 grid-cols-1 p-4 gap-6 justify-center items-center'
+      >
+        <iframe
+          width='100%'
+          height='315'
+          src='https://www.youtube.com/embed/fJ5X6Dve3RY?si=pjpGdbInnCeycWiX&amp;controls=0'
+          title='YouTube video player'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          referrerPolicy='strict-origin-when-cross-origin'
+          allowFullScreen
+        ></iframe>
+      </div>
 
       <h1
         className='text-xl text-center 2xl:text-3xl xl:text-3xl lg:text-3xl 
@@ -82,6 +104,118 @@ export const App = () => {
           <BsWhatsapp /> Fale conosco
         </a>
       </div>
+
+      <section className='w-3/4 m-auto py-12 bg-orange-300' id='test'>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+      </section>
+
+      <section className='w-3/4 m-auto py-12 bg-blue-300 mt-20' id='contact'>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+      </section>
+
+      <section className='w-3/4 m-auto py-12 bg-slate-300 mt-20' id='moises'>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          pariatur possimus, repellendus consequuntur placeat, nisi quod
+          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
+          soluta praesentium architecto blanditiis cum.
+        </p>
+      </section>
+
       <footer
         className='text-white bg-gradient-to-r 
         opacity-80 from-cyan-500 to-blue-500 py-12 px-20 
