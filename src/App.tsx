@@ -1,5 +1,6 @@
 import { BsWhatsapp } from 'react-icons/bs';
 import Logo1 from './assets/images/logo2.png';
+import { GiCheckMark } from "react-icons/gi";
 
 export const App = () => {
   const handleMenuScroll = (section: string) => {
@@ -23,18 +24,18 @@ export const App = () => {
         </div>
 
         <nav className='w-full'>
-          <ul className='flex justify-end gap-4 2xl:text-2xl xl:text-2xl text-lg'>
-            <li
-              className='bg-green-500 p-2 rounded text-white cursor-pointer hover:bg-green-700'
+          <ul className='flex justify-end gap-4 2xl:text-2xl xl:text-2xl'>
+            {/* <li
+              className='bg-green-500 2xl:text-2xl xl:text-xl text-xl p-2 rounded text-white cursor-pointer hover:bg-green-700'
               onClick={() => handleMenuScroll('test')}
             >
-              TEST
-            </li>
+              Saiba mais
+            </li> */}
             <li
-              className='bg-green-500 p-2 rounded text-white cursor-pointer hover:bg-green-700'
+              className='bg-green-700 2xl:text-2xl xl:text-xl text-xl p-2 rounded text-white cursor-pointer hover:bg-green-900'
               onClick={() => handleMenuScroll('contact')}
             >
-              CONTACT
+              Contato
             </li>
           </ul>
         </nav>
@@ -43,14 +44,14 @@ export const App = () => {
       <div className='bg-image'>
         <div className='w-full bg-black bg-opacity-30 py-14'>
           <div
-            className='2xl:w-3/4 xl:w-3/4 w-full h-full m-auto 
+            className='2xl:w-3/4 xl:w-3/4 lg:w-3/4 w-full h-full m-auto 
           grid 2xl:grid-cols-2 xl:grid-cols-2 grid-cols-1 p-4 gap-6 justify-between items-center'
           >
             <div className='w-full'>
               <iframe
                 width='100%'
                 height='315'
-                src='https://www.youtube.com/embed/fJ5X6Dve3RY?si=pjpGdbInnCeycWiX&amp;controls=0'
+                src='https://www.youtube.com/embed/tnXfbyLO4AI'
                 title='YouTube video player'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                 referrerPolicy='strict-origin-when-cross-origin'
@@ -59,34 +60,52 @@ export const App = () => {
             </div>
             <div className='w-full'>
               <h2
-                className='text-green-300 text-center 
-              2xl:text-5xl xl:text-5xl lg:text-5xl text-4xl font-semibold'
+                className='text-green-400 text-center 
+              2xl:text-5xl 2xl:text-start xl:text-5xl lg:text-5xl text-4xl font-bold'
               >
-                Texto curto com ênfase no produto
-                {/* Juros de 7%<br></br> 10 anos para pagar<br></br> Até 2 anos de carência para investimento */}
+                <div className='text-center flex justify-center items-center'>
+                <ul>
+                  <li className='text-6xl'>Pronaf:</li><br></br>
+                  <li className='flex justify-start items-start'><GiCheckMark />Juros de 2,5% ao ano</li>
+                  <li className='flex justify-start items-start'><GiCheckMark />Até 100 mil reais de crédito</li>
+                  <li className='flex justify-start items-start'><GiCheckMark />Até 12 anos para pagar</li><br></br>
+                </ul>
+                </div>
+
+                <div className='text-center flex justify-center items-center'>
+                  <ul>
+                    <li className='text-6xl'>Pronamp:</li><br></br>
+                    <li className='flex justify-start items-start'><GiCheckMark />Juros de até 8% ao ano</li>
+                    <li className='flex justify-start items-start'><GiCheckMark />Projetos de até 600 mil reais</li>
+                    <li className='flex justify-start items-start'><GiCheckMark />Até 10 anos para pagar</li>
+                    <li className='flex justify-start items-start'><GiCheckMark />2 anos de carência</li>
+                  </ul>
+                </div>
+
               </h2>
-              <div className='mt-4 text-white 2xl:text-2xl cl:text-2xl text-xl text-center'>
-                <p>Descrição sobre o plano safra.</p>
+              <div className='mt-10 text-white 2xl:text-3xl lg:text-3xl text-3xl text-center font-bold'>
+                <p>Aproveite a oportunidade para gerar sua prórpia energia elétrica investindo em painéis fotovoltáicos,
+                  quer saber como? Entre em contato agora mesmo.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div
-        className='2xl:w-1/2 xl:w-1/2 w-full h-full m-auto grid 2xl:grid-cols-0 
-      xl:grid-cols-0 grid-cols-1 p-4 gap-6 justify-center items-center'
+      <section
+        className='2xl:w-1/2 xl:w-1/2 w-full h-full m-auto grid 2xl:grid-cols-0 mt-20
+      xl:grid-cols-0 grid-cols-1 p-4 gap-6 justify-center items-center' id='test'
       >
         <iframe
           width='100%'
           height='315'
-          src='https://www.youtube.com/embed/fJ5X6Dve3RY?si=pjpGdbInnCeycWiX&amp;controls=0'
+          src='https://www.youtube.com/embed/LT6-A7-_VKs'
           title='YouTube video player'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           referrerPolicy='strict-origin-when-cross-origin'
           allowFullScreen
         ></iframe>
-      </div>
+      </section>
 
       <h1
         className='text-xl text-center 2xl:text-3xl xl:text-3xl lg:text-3xl 
@@ -95,7 +114,7 @@ export const App = () => {
         Quer saber mais? Entre em contato e solicite um orçamento
       </h1>
 
-      <div className='flex justify-center items-center'>
+      <section className='flex justify-center items-center' id='contact'>
         <a
           href='https://wa.me/5519991711316'
           target='_blank'
@@ -103,118 +122,9 @@ export const App = () => {
         >
           <BsWhatsapp /> Fale conosco
         </a>
-      </div>
-
-      <section className='w-3/4 m-auto py-12 bg-orange-300' id='test'>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
       </section>
 
-      <section className='w-3/4 m-auto py-12 bg-blue-300 mt-20' id='contact'>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
 
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-      </section>
-
-      <section className='w-3/4 m-auto py-12 bg-slate-300 mt-20' id='moises'>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-          pariatur possimus, repellendus consequuntur placeat, nisi quod
-          temporibus earum omnis est tenetur provident dolorum sed perspiciatis
-          soluta praesentium architecto blanditiis cum.
-        </p>
-      </section>
 
       <footer
         className='text-white bg-gradient-to-r 
