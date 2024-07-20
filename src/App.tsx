@@ -24,29 +24,46 @@ export const App = () => {
 
         <nav className='w-full'>
           <ul className='flex justify-end gap-4 2xl:text-2xl xl:text-2xl'>
-            {/* <li
-              className='bg-green-500 2xl:text-2xl xl:text-xl text-xl p-2 rounded text-white cursor-pointer hover:bg-green-700'
-              onClick={() => handleMenuScroll('test')}
+
+            <a
+              href='https://wa.me/5519991711316'
+              target='_blank'
+              className='bg-green-700 text-white 2xl:text-xl xl:text-xl lg:text-xl text-xl 
+                py-3 px-10 2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center gap-3 rounded-xl my-12 cursor-pointer hover:bg-green-900'
             >
-              Saiba mais
-            </li> */}
-            <li
-              className='bg-green-700 2xl:text-2xl xl:text-xl text-xl p-2 rounded text-white cursor-pointer hover:bg-green-900'
-              onClick={() => handleMenuScroll('contact')}
-            >
-              Contato
-            </li>
+              <BsWhatsapp /> Fale conosco
+            </a>
           </ul>
         </nav>
       </div>
 
       <div className='bg-image'>
-        <div className='w-full bg-black bg-opacity-30 py-14'>
+        <div className='w-full bg-black bg-opacity-70 py-14'>
           <div
             className='2xl:w-3/4 xl:w-3/4 lg:w-3/4 w-full h-full m-auto 
           grid 2xl:grid-cols-2 xl:grid-cols-2 grid-cols-1 p-4 gap-6 justify-between items-center'
           >
             <div className='w-full'>
+
+              <div className='mb-10 text-white 2xl:text-3xl lg:text-3xl text-3xl text-center font-bold'>
+                <p>Aproveite a oportunidade para gerar sua própria energia elétrica investindo em painéis fotovoltaicos. Quer saber como?
+
+                  <div className='flex justify-center items-center'>
+                    <div className='w-full flex justify-center items-center'>
+
+                      <a
+                        href='https://wa.me/5519991711316'
+                        target='_blank'
+                        className='bg-green-700 text-white 2xl:text-xl xl:text-xl lg:text-xl text-xl py-3 px-10 
+          2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center gap-3 rounded-xl my-12 cursor-pointer hover:bg-green-900'
+                      >
+                        <BsWhatsapp /> Entre em contato agora mesmo
+                      </a>
+                    </div>
+                  </div>
+                </p>
+              </div>
+
               <iframe
                 width='100%'
                 height='315'
@@ -56,24 +73,26 @@ export const App = () => {
                 referrerPolicy='strict-origin-when-cross-origin'
                 allowFullScreen
               ></iframe>
+
+
             </div>
             <div className='w-full'>
               <h2
                 className='text-green-400 text-center 
-              2xl:text-5xl 2xl:text-start xl:text-5xl lg:text-5xl text-4xl font-bold'
+              2xl:text-3xl 2xl:text-start xl:text-3xl lg:text-3xl text-3xl font-bold'
               >
                 <div className='text-center flex justify-center items-center'>
-                <ul>
-                  <li className='text-6xl'>Pronaf:</li><br></br>
-                  <li className='flex justify-start items-start'><GiCheckMark />Juros de 2,5% ao ano</li>
-                  <li className='flex justify-start items-start'><GiCheckMark />Até 100 mil reais de crédito</li>
-                  <li className='flex justify-start items-start'><GiCheckMark />Até 12 anos para pagar</li><br></br>
-                </ul>
+                  <ul>
+                    <li className='text-6xl text-white'>Pronaf:</li><br></br>
+                    <li className='flex justify-start items-start'><GiCheckMark />Juros de 2,5% ao ano</li>
+                    <li className='flex justify-start items-start'><GiCheckMark />Até 100 mil reais de crédito</li>
+                    <li className='flex justify-start items-start'><GiCheckMark />Até 12 anos para pagar</li><br></br>
+                  </ul>
                 </div>
 
                 <div className='text-center flex justify-center items-center'>
                   <ul>
-                    <li className='text-6xl'>Pronamp:</li><br></br>
+                    <li className='text-6xl text-white'>Pronamp:</li><br></br>
                     <li className='flex justify-start items-start'><GiCheckMark />Juros de até 8% ao ano</li>
                     <li className='flex justify-start items-start'><GiCheckMark />Projetos de até 600 mil reais</li>
                     <li className='flex justify-start items-start'><GiCheckMark />Até 10 anos para pagar</li>
@@ -82,10 +101,7 @@ export const App = () => {
                 </div>
 
               </h2>
-              <div className='mt-10 text-white 2xl:text-3xl lg:text-3xl text-3xl text-center font-bold'>
-                <p>Aproveite a oportunidade para gerar sua prórpia energia elétrica investindo em painéis fotovoltáicos,
-                  quer saber como? Entre em contato agora mesmo.</p>
-              </div>
+
             </div>
           </div>
         </div>
@@ -108,16 +124,16 @@ export const App = () => {
 
       <h1
         className='text-xl text-center 2xl:text-3xl xl:text-3xl lg:text-3xl 
-           my-10 mx-auto 2xl:w-2/3 xl:w-2/3 lg:w-2/3 w-full font-bold uppercase px-4'
+           my-10 mx-auto 2xl:w-2/3 xl:w-2/3 lg:w-2/3 w-full font-bold px-4'
       >
-        Quer saber mais? Entre em contato e solicite um orçamento
+        Quer saber mais? Solicite um orçamento agora.
       </h1>
 
       <section className='flex justify-center items-center' id='contact'>
         <a
           href='https://wa.me/5519991711316'
           target='_blank'
-          className='bg-green-700 text-white py-3 px-10 flex justify-center items-center gap-3 rounded-xl mb-12'
+          className='bg-green-700 text-white py-3 px-10 flex justify-center items-center gap-3 rounded-xl mb-12 cursor-pointer hover:bg-green-900'
         >
           <BsWhatsapp /> Fale conosco
         </a>
@@ -130,8 +146,7 @@ export const App = () => {
         opacity-80 from-cyan-500 to-blue-500 py-12 px-20 
         shadow-lg w-full text-center text-sm m-auto'
       >
-        <p className='text-center'>2024 - Desenvolvido por Missura Networks</p>
-        <p className='text-center'>CNPJ: 53.447.302/0001-79</p>
+        Copyright © 2024 PD Energy. CNPJ 22.575.893/0001-36. Desenvolvido por Missura Networks.
       </footer>
     </div>
   );
