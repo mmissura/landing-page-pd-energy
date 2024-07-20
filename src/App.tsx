@@ -2,13 +2,7 @@ import { BsWhatsapp } from 'react-icons/bs';
 import { GiCheckMark } from "react-icons/gi";
 
 export const App = () => {
-  const handleMenuScroll = (section: string) => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const element: any = document.getElementById(section);
-    element.scrollIntoView({
-      behavior: 'smooth',
-    });
-  };
+ 
 
   return (
     <div className='w-full'>
@@ -26,7 +20,7 @@ export const App = () => {
           <ul className='flex justify-end gap-4 2xl:text-2xl xl:text-2xl'>
 
             <a
-              href='https://wa.me/5519991711316'
+              href='https://wa.me/5519991711316?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20geração%20de%20energia%20solar%20rural.'
               target='_blank'
               className='bg-green-700 text-white 2xl:text-xl xl:text-xl lg:text-xl text-xl 
                 py-3 px-10 2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center gap-3 rounded-xl my-12 cursor-pointer hover:bg-green-900'
@@ -52,7 +46,7 @@ export const App = () => {
                     <div className='w-full flex justify-center items-center'>
 
                       <a
-                        href='https://wa.me/5519991711316'
+                        href='https://wa.me/5519991711316?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20geração%20de%20energia%20solar%20rural.'
                         target='_blank'
                         className='bg-green-700 text-white 2xl:text-xl xl:text-xl lg:text-xl text-xl py-3 px-10 
           2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center gap-3 rounded-xl my-12 cursor-pointer hover:bg-green-900'
@@ -131,7 +125,7 @@ export const App = () => {
 
       <section className='flex justify-center items-center' id='contact'>
         <a
-          href='https://wa.me/5519991711316'
+          href='https://wa.me/5519991711316?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20geração%20de%20energia%20solar%20rural.'
           target='_blank'
           className='bg-green-700 text-white py-3 px-10 flex justify-center items-center gap-3 rounded-xl mb-12 cursor-pointer hover:bg-green-900'
         >
