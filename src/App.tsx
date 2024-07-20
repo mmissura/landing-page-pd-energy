@@ -6,7 +6,7 @@ export const App = () => {
 
   return (
     <div className='w-full'>
-      <div className='w-3/4 m-auto grid grid-cols-2 p-4 justify-between items-center'>
+      <div className='w-3/4 m-auto grid grid-cols-2 justify-between items-center'>
         <div className='w-full'>
           <img
             src='https://pdenergy.com.br/planosafra/assets/logo2-0bbc4435.png'
@@ -17,15 +17,16 @@ export const App = () => {
         </div>
 
         <nav className='w-full'>
-          <ul className='flex justify-end gap-4 2xl:text-2xl xl:text-2xl'>
-
+          <ul className='flex justify-end gap-4'>
+            
             <a
-              href='https://wa.me/5519991711316?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20geração%20de%20energia%20solar%20rural.'
+              href='https://api.whatsapp.com/send/?phone=5519991711316&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+gera%C3%A7%C3%A3o+de+energia+solar+rural.'
               target='_blank'
               className='bg-green-700 text-white 2xl:text-xl xl:text-xl lg:text-xl text-xl 
-                py-3 px-10 2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center gap-3 rounded-xl my-12 cursor-pointer hover:bg-green-900'
+              py-3 px-4 2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center 
+              gap-3 rounded-xl my-12 cursor-pointer hover:bg-green-900'
             >
-              <BsWhatsapp /> Fale conosco
+              <BsWhatsapp /> WhatsApp
             </a>
           </ul>
         </nav>
@@ -46,10 +47,10 @@ export const App = () => {
                     <div className='w-full flex justify-center items-center'>
 
                       <a
-                        href='https://wa.me/5519991711316?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20geração%20de%20energia%20solar%20rural.'
+                        href='https://api.whatsapp.com/send/?phone=5519991711316&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+gera%C3%A7%C3%A3o+de+energia+solar+rural.'
                         target='_blank'
-                        className='bg-green-700 text-white 2xl:text-xl xl:text-xl lg:text-xl text-xl py-3 px-10 
-          2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center gap-3 rounded-xl my-12 cursor-pointer hover:bg-green-900'
+                        className='bg-green-700 text-white 2xl:text-xl xl:text-xl lg:text-xl text-lg py-3 px-4 
+                        2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center gap-3 rounded-xl my-12 cursor-pointer hover:bg-green-900'
                       >
                         <BsWhatsapp /> Entre em contato agora mesmo
                       </a>
@@ -73,7 +74,7 @@ export const App = () => {
             <div className='w-full'>
               <h2
                 className='text-green-400 text-center 
-              2xl:text-3xl 2xl:text-start xl:text-3xl lg:text-3xl text-3xl font-bold'
+              2xl:text-3xl 2xl:text-start xl:text-3xl lg:text-3xl text-2xl font-bold'
               >
                 <div className='text-center flex justify-center items-center'>
                   <ul>
@@ -125,7 +126,7 @@ export const App = () => {
 
       <section className='flex justify-center items-center' id='contact'>
         <a
-          href='https://wa.me/5519991711316?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20geração%20de%20energia%20solar%20rural.'
+          href='https://api.whatsapp.com/send/?phone=5519991711316&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+gera%C3%A7%C3%A3o+de+energia+solar+rural.'
           target='_blank'
           className='bg-green-700 text-white py-3 px-10 flex justify-center items-center gap-3 rounded-xl mb-12 cursor-pointer hover:bg-green-900'
         >
