@@ -1,5 +1,4 @@
 import { BsWhatsapp } from 'react-icons/bs';
-import Logo1 from './assets/images/logo2.png';
 import { GiCheckMark } from "react-icons/gi";
 
 export const App = () => {
@@ -16,7 +15,7 @@ export const App = () => {
       <div className='w-3/4 m-auto grid grid-cols-2 p-4 justify-between items-center'>
         <div className='w-full'>
           <img
-            src={Logo1}
+            src='https://pdenergy.com.br/planosafra/assets/logo2-0bbc4435.png'
             className='w-28'
             alt='Logo PD Energy'
             title='Logo PD Energy'
@@ -109,7 +108,7 @@ export const App = () => {
 
       <h1
         className='text-xl text-center 2xl:text-3xl xl:text-3xl lg:text-3xl 
-           my-10 mx-auto 2xl:w-2/3 xl:w-2/3 lg:w-2/3 w-full font-bold uppercase'
+           my-10 mx-auto 2xl:w-2/3 xl:w-2/3 lg:w-2/3 w-full font-bold uppercase px-4'
       >
         Quer saber mais? Entre em contato e solicite um orçamento
       </h1>
@@ -129,9 +128,9 @@ export const App = () => {
       <footer
         className='text-white bg-gradient-to-r 
         opacity-80 from-cyan-500 to-blue-500 py-12 px-20 
-        shadow-lg w-full text-center text-sm'
+        shadow-lg w-full text-center text-sm m-auto'
       >
-        &copy; Copyright 2024 by Missura Networks
+        <p className='text-center'>2024 - Desenvolvido por Missura Networks</p>
         <p className='text-center'>CNPJ: 53.447.302/0001-79</p>
       </footer>
     </div>
